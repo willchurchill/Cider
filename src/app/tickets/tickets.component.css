@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  background: url("../../assets/Photos/Generic/kristian2.jpg") rgba(255,255,255,0.85)  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 30px;
+  /*background-blend-mode: color;
+  font-size: 1.2rem;
+  padding: 5% 20% 5% 20%;
+  padding-bottom: 80px;
+  text-align: center;*/
+}
+
+.wide {
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  background-color: rgba(40,40,40,0.9);
+  color: white;
+  flex: 1;
+  /*height: 70vh;*/
+}
+
+p {
+  font-size: 1.3rem;
+  color: white;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+li {
+  color: white;
+  text-align: left;
+  padding: 10px;
+}

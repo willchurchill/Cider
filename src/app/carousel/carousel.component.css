@@ -1,0 +1,81 @@
+.container
+p#cf7_controls {
+  background: url("../../assets/Photos/Generic/kristian2.jpg") rgba(0,0,0,0.65)  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: color;
+  margin: 0;
+  text-align: center;
+}
+#cf7_controls .circle {
+  display: inline-block;
+  cursor:pointer;
+  background-color: gray;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 10px;
+}
+#cf7_controls .circle:hover {
+  background-color: gold;
+}
+
+#cf7_controls .selected {
+  background-color: gold;
+}
+
+#cf7 {
+  position:relative;
+  height:50vh;
+  width:50vw;
+  text-align: center;
+}
+#cf7 img {
+  position:absolute;
+  left: 0%;
+  width: 50vw;
+  height: 50vh;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity:0;
+  object-fit: cover;
+}
+
+#cf7 img.opaque {
+  opacity:1;
+}
+.overText {
+  position: absolute;
+  z-index: 300;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.overText.add {
+  opacity: 1;
+}
+
+.innerText {
+    position: absolute;
+    /*height: 100%;*/
+    width: 100%;
+    top: 20%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    z-index: 300;
+}
+
+.spacer {
+  margin: 10px;
+}

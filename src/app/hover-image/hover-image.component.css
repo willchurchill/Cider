@@ -1,0 +1,75 @@
+.up{
+  margin-top: -40px;
+}
+
+.rel {
+  position: relative;
+}
+
+.bottom-text{
+  position: absolute;
+  bottom: 33%;
+  font-weight: bold;
+  font-size: 3rem;
+  width: 100%;
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+
+.joinChallenge {
+  background: url("../../assets/Photos/Generic/bruno-nascimento.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1;
+  height: 50vh;
+  transition: 0.7s ease-in-out;
+  background-blend-mode: lighten;
+}
+
+.joinChallenge:hover {
+  background: url("../../assets/Photos/Generic/bruno-nascimento.jpg") rgba(255,255,255,0.8) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: lighten;
+  .active {
+
+  }
+}
+.active {
+  display: block;
+}
+
+
+.firstEvent {
+  background: url("../../assets/Photos/Generic/image 9.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1;
+  height: 50vh;
+  transition: 0.7s ease-in-out;
+  background-blend-mode: lighten;
+}
+
+.firstEvent:hover {
+  background: url("../../assets/Photos/Generic/image 9.jpg") rgba(255,255,255,0.8) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+.container {
+  display: flex;
+}
+
+.wide {
+  text-align: center;
+  flex: 1;
+}

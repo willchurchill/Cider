@@ -1,0 +1,12 @@
+<div class="container up" routerLink="/about">
+  <div (mouseenter)="left()" (mouseleave)="left()" class="wide firstEvent rel">
+    <div [class.active]="selectedL" class="bottom-text">
+      Be a part of the first event of its kind
+    </div>
+  </div>
+  <div (mouseenter)="right()" (mouseleave)="right()" class="wide joinChallenge rel">
+    <div [class.active]="selectedR" class="bottom-text">
+      Join the challenge
+    </div>
+  </div>
+</div>

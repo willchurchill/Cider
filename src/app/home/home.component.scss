@@ -1,0 +1,245 @@
+// h1 {
+//   color: white;
+// }
+.container2 {
+  background: url("../../assets/Photos/Generic/kristian2.jpg") rgba(255,255,255,0.85) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: color;
+  font-size: 1.2rem;
+  padding: 1% 20% 1% 20%;
+  // padding-bottom: 5;
+  text-align: center;
+}
+
+.white {
+  // top: 50%;
+  // background-color: rgba(255,255,255,0.5);
+  // color: white;
+  // display: inline-block;
+  // border-radius: 50%;
+  // padding: 30%;
+  text-align: center;
+  padding-top: 20vh;
+}
+.white h2 {
+  color: white;
+  font: 800 32px/32px "open sans";
+  margin: 0 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: 3.5s ease-in-out;
+}
+
+.active {
+  opacity: 1 !important;
+}
+
+.topText {
+  background-color: rgba(0,0,0,0);
+  text-align: center;
+}
+
+.dark{
+  background: url("../../assets/Photos/Generic/kristian2.jpg") rgba(0,0,0,0.65)  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: color;
+  font-size: 1.2rem;
+  padding: 2% 5% 2% 5%;
+  // padding-bottom: px;
+  text-align: center;
+}
+
+.darkLight{
+  background: url("../../assets/Photos/Generic/kristian2.jpg") rgba(0,0,0,0.45)  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: color;
+  font-size: 1.2rem;
+  padding: 5% 20% 5% 20%;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.wide2{
+  flex:2;
+}
+.red{
+  color: #ef4723;
+}
+.kirsten {
+  background: url("../../assets/Photos/Generic/kristian2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1;
+  // margin: 0px -20px;
+  height: 50vh;
+}
+.up{
+  margin-top: -40px;
+}
+.stub {
+  height: 50vh;
+}
+.textt {
+  position: relative;
+  text-align: center;
+  // background: rgba(0, 0, 0, 0.3);
+  height: 50vh;
+  // padding-left: 5%;
+  // padding: 10px;
+  // margin-top: -30px;
+  // text-shadow: 0px 0px 15px #000;
+  text-shadow: 4px 4px 10px #011100, -2px -3px 10px #011100, 4px 5px 10px #011100, 4px 6px 10px #011100;
+  // color: blue;
+  // margin: auto 100px;
+  // opacity: 0;
+}
+
+.banner {
+  padding-top: 50px;
+}
+span.dark {
+  // background: rgba(0, 0, 0, 0.5);
+  color: black;
+}
+.double {
+  display: flex;
+}
+.rel {
+  position: relative;
+}
+.bottom-text{
+  position: absolute;
+  bottom: 33%;
+  font-weight: bold;
+  font-size: 3rem;
+  width: 100%;
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+
+
+.joinChallenge {
+  background: url("../../assets/Photos/Generic/bruno-nascimento.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1;
+  height: 50vh;
+  transition: 0.7s ease-in-out;
+  background-blend-mode: lighten;
+}
+
+.joinChallenge:hover{
+  background: url("../../assets/Photos/Generic/bruno-nascimento.jpg") rgba(255,255,255,0.8) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: lighten;
+  .bottom-text {
+    display: block;
+  }
+}
+
+.firstEvent {
+  background: url("../../assets/Photos/Generic/image 9.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1;
+  height: 50vh;
+  transition: 0.7s ease-in-out;
+  background-blend-mode: lighten;
+}
+
+.firstEvent:hover{
+  background: url("../../assets/Photos/Generic/image 9.jpg") rgba(255,255,255,0.8) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: lighten;
+  .bottom-text {
+    display: block;
+  }
+}
+
+p {
+	color: #222;
+	font: 400 16px/24px "gentium book basic";
+	margin: 0;
+}
+
+.sample h1 {
+	color: #222;
+	font: 800 64px/64px "open sans";
+	margin: 0 0 0px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.sample#nietzsche h1 span {
+	// font: 400 60px/60px "gentium book basic";
+	text-transform: none;
+  font-size: 3rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.sample#nietzsche h1 span.kern {
+	margin: 0 4px 0 -10px;
+}
+
+.sample#nietzsche h2 {
+  color: #222;
+  // margin: -10px 0 40px 0;
+  // text-align: left;
+  text-transform: uppercase;
+}
+
+.sample#nietzsche h2 span {
+	background: gold;
+	padding: 0 20px;
+	position: relative;
+	top: -10px;
+  z-index: 3;
+}
+
+.sample#nietzsche p {
+	color: #222;
+	// font: 400 16px/24px "gentium book basic";
+	margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.fixer {
+  position: fixed;
+}
+
+.wide {
+  text-align: center;
+  flex: 1;
+}
+.center {
+  padding-top: 0px;
+  text-align: center;
+}

@@ -1,0 +1,101 @@
+.lower {
+  padding-top: calc(15vh - 2rem);
+}
+.container {
+  /*background: linear-gradient(to top, black, black), url("../../assets/Photos/Generic/kirsten.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: lighten;*/
+}
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*width: 100%;*/
+    height: auto;
+    position: relative;
+    overflow: auto;
+    display: flex;
+}
+
+ul.sidenav li:not(.image-block) {
+  flex: 3;
+  text-align: center;
+}
+
+.space {
+  flex: 3;
+}
+
+ul.sidenav li a {
+    margin: 0 auto;
+    /*padding: 0px 30px 20px;*/
+    text-align: right;
+    /*display: inline-block;*/
+    /*padding: 2rem 4rem;*/
+    text-decoration: none;
+    /*font-style: oblique;*/
+    font-weight: bold;
+    font-size: 1.3rem;
+    /*border-bottom: 2px solid white;*/
+}
+
+ul.sidenav li a.active {
+    /*background-color: #4CAF50;*/
+    /*border-bottom: 2px solid black;*/
+    color: goldenRod !important;
+}
+
+ul.sidenav li a:hover:not(.image-underline):not(.active) {
+    /*background-color: #555;*/
+    /*color: white;*/
+    color: gold;
+    transition: all 420ms cubic-bezier(.165, .84, .44, 1);
+    /*border-bottom: 2px solid black;*/
+}
+
+img {
+  /*padding-left: 2rem;*/
+  /*padding-top: 10px;*/
+  position: absolute center center;
+  /*top: 20px;*/
+  /*bottom: -10px;*/
+  float: left;
+  height: 15vh;
+  /*padding-left: 10px;*/
+  object-fit: contain;
+  float: initial;
+}
+
+.image-block {
+  position: relative;
+  /*float: left;*/
+  flex: 2;
+  height: calc(15vh + 10px);
+  text-align: center;
+}
+
+.freezePane {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+/*@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+
+    .image-block {
+      text-align: center;
+    }
+    ul.sidenav li img {
+      float: none;
+    }
+}*/

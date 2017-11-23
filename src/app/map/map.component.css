@@ -1,0 +1,8 @@
+.routePic {
+  height: 90vh;
+  background: url("../../assets/Photos/route.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
