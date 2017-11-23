@@ -16,12 +16,10 @@ export class HoverImageComponent implements OnInit {
   }
 
   left() {
-    // alert("muahaha")
     this.selectedL = !(this.selectedL)
   }
 
   right() {
-    // alert("muahaha")
     this.selectedR = !(this.selectedR)
   }
 
