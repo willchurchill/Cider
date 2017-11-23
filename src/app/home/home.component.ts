@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Image } from '../carousel/carousel.component';
+import * as SnapScroll from '../../../node_modules/angular-snapscroll/dist/angular-snapscroll.min';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
   mainText1 = false;

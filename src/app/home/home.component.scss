@@ -1,6 +1,3 @@
-// h1 {
-//   color: white;
-// }
 .container2 {
   background: url("../../assets/Photos/Generic/kristian2.jpg") rgba(255,255,255,0.85) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -10,20 +7,14 @@
   background-blend-mode: color;
   font-size: 1.2rem;
   padding: 1% 20% 1% 20%;
-  // padding-bottom: 5;
   text-align: center;
 }
 
 .white {
-  // top: 50%;
-  // background-color: rgba(255,255,255,0.5);
-  // color: white;
-  // display: inline-block;
-  // border-radius: 50%;
-  // padding: 30%;
   text-align: center;
   padding-top: 20vh;
 }
+
 .white h2 {
   color: white;
   font: 800 32px/32px "open sans";
@@ -94,23 +85,14 @@
 .textt {
   position: relative;
   text-align: center;
-  // background: rgba(0, 0, 0, 0.3);
   height: 50vh;
-  // padding-left: 5%;
-  // padding: 10px;
-  // margin-top: -30px;
-  // text-shadow: 0px 0px 15px #000;
   text-shadow: 4px 4px 10px #011100, -2px -3px 10px #011100, 4px 5px 10px #011100, 4px 6px 10px #011100;
-  // color: blue;
-  // margin: auto 100px;
-  // opacity: 0;
 }
 
 .banner {
   padding-top: 50px;
 }
 span.dark {
-  // background: rgba(0, 0, 0, 0.5);
   color: black;
 }
 .double {
@@ -193,7 +175,6 @@ p {
 }
 
 .sample#nietzsche h1 span {
-	// font: 400 60px/60px "gentium book basic";
 	text-transform: none;
   font-size: 3rem;
 }
@@ -208,8 +189,6 @@ p {
 
 .sample#nietzsche h2 {
   color: #222;
-  // margin: -10px 0 40px 0;
-  // text-align: left;
   text-transform: uppercase;
 }
 
@@ -223,7 +202,6 @@ p {
 
 .sample#nietzsche p {
 	color: #222;
-	// font: 400 16px/24px "gentium book basic";
 	margin: 0;
 }
 
