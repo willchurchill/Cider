@@ -1,0 +1,23 @@
+.body-background {
+  background: url("../../assets/Photos/signpost.jpg") rgba(255, 255, 255, 0.5) no-repeat center center fixed;
+  background-size: cover;
+  background-blend-mode: color;
+  padding:4em 0;
+}
+
+.nav-padding {
+  height: 10vh;
+}
+
+.iframe-container{
+  width:100%;
+  overflow:hidden;
+}
+
+.juicer-iframe{
+  display:block;
+  margin:0 auto;
+  border:0;
+  width:calc(100% + 19px);
+  height: 100vh;
+}

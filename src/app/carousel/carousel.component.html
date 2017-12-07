@@ -1,10 +1,10 @@
 <div id="cf7" class="shadow">
-    <div (mouseenter)="adder()" (mouseleave)="adder()" class="overText" [class.add]="add">
-      <div class="innerText" [innerHTML]="text">
-      </div>
+  <div (mouseenter)="adder()" (mouseleave)="adder()" class="overText" [class.add]="add">
+    <div class="innerText" [innerHTML]="text">
     </div>
+  </div>
   <img *ngFor="let image of images"
-        (click)="next()"
-        [class.opaque]="image.name === selectedImage"
-        src={{image.src}} />
+    (click)="next()"
+    [class.opaque]="image.name === selectedImage"
+    src={{image.src}} />
 </div>

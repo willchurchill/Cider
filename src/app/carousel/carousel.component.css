@@ -29,13 +29,13 @@ p#cf7_controls {
 #cf7 {
   position:relative;
   height:50vh;
-  width:50vw;
+  width:49.4vw;
   text-align: center;
 }
 #cf7 img {
   position:absolute;
   left: 0%;
-  width: 50vw;
+  width: 49.4vw;
   height: 50vh;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
@@ -71,11 +71,14 @@ p#cf7_controls {
     width: 100%;
     top: 20%;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 800;
     z-index: 300;
+    padding:2rem;
 }
 
 .spacer {
-  margin: 10px;
+  margin: 0;
+  padding:0;
 }

@@ -1,33 +1,274 @@
-.container {
-  display: flex;
-  background: url("../../assets/Photos/Generic/kristian2.jpg") rgba(255,255,255,0.85)  no-repeat center center fixed;
+.body-background {
+  background: url("../../assets/Photos/Generic/kristian2.jpg") rgba(255, 255, 255, 0.5) no-repeat center center fixed;
+  background-size: cover;
+  background-blend-mode: color;
+  padding:2em;
+}
+
+.nav-padding {
+  height: 20vh;
+}
+
+.ticket-panel{
+  background-color: rgba(0,0,0,0.8);
+  padding:1em;
+  color:white;
+  font-family:'Roboto Condensed', sans-serif;
+}
+
+.panel-header{
+  font-size:2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ticket-option{
+  border:1px white solid;
+  padding: 1em;
+  margin:1em 0;
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+}
+
+.ticket-enabled:hover{
+  background-color:white;
+  color:#757575;
+  cursor:pointer;
+}
+
+.ticket-disabled{
+  color:black;
+}
+
+.ticket-main{
+  font-weight:bold;
+  font-size:1.1em;
+}
+
+.ticket-price{
+  text-align:right;
+}
+
+.panel-text{
+  padding:1em 0;
+}
+
+.panel-text ul li{
+  padding: 0.5em 0;
+}
+
+.waiver-link {
+  text-decoration:underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+.waiver-link:hover{
+  text-decoration: none;
+}
+
+.modal-body{
+  padding:1em 2em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.iframe-container{
+  width:100%;
+  overflow:hidden;
+}
+
+.ticket-iframe{
+  display:block;
+  margin:0 auto;
+  border:0;
+  width:calc(100% + 19px);
+  height: 100vh;
+}
+
+/*
+
+.container2 {
+  background: url("../../assets/Photos/Generic/kristian2.jpg") rgba(255,255,255,0.85) no-repeat center center fixed;
+  background-size: cover;
+  background-blend-mode: color;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.topText {
+  background-color: rgba(0,0,0,0);
+  text-align: center;
+}
+
+.dark{
+  background: url("../../assets/Photos/Generic/kristian2.jpg") rgba(0,0,0,0.65)  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-top: 30px;
+  background-blend-mode: color;
+  font-size: 1.2rem;
+  padding: 2% 5% 2% 5%;
+  // padding-bottom: px;
+  text-align: center;
+}
+
+.darkLight{
+  background: url("../../assets/Photos/Generic/kristian2.jpg") rgba(0,0,0,0.45)  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: color;
+  font-size: 1.2rem;
+  padding: 5% 20% 5% 20%;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.red{
+  color: #ef4723;
+}
+.kirsten {
+  background: url("../../assets/Photos/Generic/kristian2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  // margin: 0px -20px;
+  height: 50vh;
+}
+.up{
+  margin-top: -40px;
+}
+.stub {
+  height: 50vh;
+}
+
+.banner {
+  padding-top: 50px;
+}
+span.dark {
+  color: black;
+}
+
+.rel {
+  position: relative;
+}
+.bottom-text{
+  position: absolute;
+  bottom: 33%;
+  font-weight: bold;
+  font-size: 3rem;
+  width: 100%;
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+
+
+.joinChallenge {
+  background: url("../../assets/Photos/Generic/bruno-nascimento.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1;
+  height: 50vh;
+  transition: 0.7s ease-in-out;
+  background-blend-mode: lighten;
+}
+
+.joinChallenge:hover{
+  background: url("../../assets/Photos/Generic/bruno-nascimento.jpg") rgba(255,255,255,0.8) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: lighten;
+  .bottom-text {
+    display: block;
+  }
+}
+
+.firstEvent {
+  background: url("../../assets/Photos/Generic/image 9.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1;
+  height: 50vh;
+  transition: 0.7s ease-in-out;
+  background-blend-mode: lighten;
+}
+
+.firstEvent:hover{
+  background: url("../../assets/Photos/Generic/image 9.jpg") rgba(255,255,255,0.8) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: lighten;
+  .bottom-text {
+    display: block;
+  }
+}
+
+.sample h1 {
+	color: #222;
+	font: 800 64px/64px "open sans";
+	margin: 0 0 0px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.sample#nietzsche h1 span {
+	text-transform: none;
+  font-size: 3rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.sample#nietzsche h1 span.kern {
+	margin: 0 4px 0 -10px;
+}
+
+.sample#nietzsche h2 {
+  color: #222;
+  text-transform: uppercase;
+}
+
+.sample#nietzsche h2 span {
+	background: gold;
+	padding: 0 20px;
+	position: relative;
+	top: -10px;
+  z-index: 3;
+}
+
+.sample#nietzsche p {
+	color: #222;
+	margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.fixer {
+  position: fixed;
 }
 
 .wide {
   text-align: center;
-  margin: 10px;
-  padding: 20px;
-  background-color: rgba(40,40,40,0.9);
-  color: white;
   flex: 1;
 }
+.center {
+  padding-top: 0px;
+  text-align: center;
+}
 
-p {
-  font-size: 1.3rem;
-  color: white;
-}
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-}
-li {
-  color: white;
-  text-align: left;
-  padding: 10px;
-}
+*/

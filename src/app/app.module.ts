@@ -9,10 +9,12 @@ import { CountdownComponent } from './countdown/countdown.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { CharityComponent } from './charity/charity.component';
 import { CiderComponent } from './cider/cider.component';
 import { TicketsComponent } from './tickets/tickets.component';
 import { AboutComponent } from './about/about.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 import { HoverImageComponent } from './hover-image/hover-image.component';
 import { NavstubComponent } from './navstub/navstub.component';
@@ -25,10 +27,12 @@ import { NavstubComponent } from './navstub/navstub.component';
     NavbarComponent,
     HomeComponent,
     ContactComponent,
+    CharityComponent,
     CiderComponent,
     TicketsComponent,
     AboutComponent,
     CarouselComponent,
+    GalleryComponent,
     FooterComponent,
     HoverImageComponent,
     NavstubComponent
@@ -51,6 +55,10 @@ import { NavstubComponent } from './navstub/navstub.component';
         component: ContactComponent
       },
       {
+        path: 'charity',
+        component: CharityComponent
+      },
+      {
         path: 'cider',
         component: CiderComponent
       },
@@ -65,6 +73,10 @@ import { NavstubComponent } from './navstub/navstub.component';
       {
         path: 'about',
         component: AboutComponent
+      },
+      {
+        path: 'gallery',
+        component: GalleryComponent
       }
     ])
   ],

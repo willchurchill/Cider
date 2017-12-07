@@ -1,20 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { Image } from '../carousel/carousel.component';
+import * as SnapScroll from '../../../node_modules/angular-snapscroll/dist/angular-snapscroll.min';
 
 @Component({
   selector: 'app-cider',
   templateUrl: './cider.component.html',
-  styleUrls: ['./cider.component.css']
+  styleUrls: ['./cider.component.css'],
 })
 export class CiderComponent implements OnInit {
+  mainText1 = false;
+  mainText2 = false;
 
-  images:Image[] = [
-  {name: 0, src:"../../assets/Photos/Generic/image 10.jpg"},
-  {name: 1, src:"../../assets/Photos/Generic/chloe-ridgway.jpg"},
-  {name: 2, src:"../../assets/Photos/Generic/image 3.jpg"}]
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      this.mainText1 = true;
+    }, 1000)
+
+    setTimeout(() => {
+      this.mainText2 = true;
+    }, 3000)
   }
 
 }

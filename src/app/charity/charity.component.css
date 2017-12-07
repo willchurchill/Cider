@@ -1,0 +1,76 @@
+.body-background {
+  /*
+  background: url("../../assets/Photos/wearetherunningcharity.png") rgba(255, 255, 255, 0.8) no-repeat center center fixed;
+  background-blend-mode: color;
+  */
+  background: url("../../assets/Photos/wearetherunningcharity.png") no-repeat center center fixed;
+  background-size: cover;
+  padding:4em 0;
+}
+
+.body-white{
+  background-color:white;
+  padding:3em 0;
+}
+
+.nav-padding {
+  height: 15vh;
+}
+
+.body-header {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+
+.white h2 {
+  text-align: center;
+  opacity: 0;
+  transition: 3.5s ease-in-out;
+  padding: 5px;
+}
+
+.white-bar-text{
+  color: white;
+  font: 800 32px/32px "open sans";
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 10px #011100, -2px -3px 10px #011100, 4px 5px 10px #011100, 4px 6px 10px #011100;
+}
+
+.body-text {
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+
+.active {
+  opacity: 1 !important;
+}
+
+.donate-link{
+  background-color:gold;
+  padding:10px 25px;
+  text-transform: uppercase;
+  color:#666666;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:1.1rem;
+  font-weight:bold;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.donate-link:hover{
+  text-decoration:none;
+  background-color:#FFDA10;
+  color:#747474;
+}
+
+.running-charity-logo{
+  height:5rem;
+}
+
+.coming-soon {
+  padding: 12vh 0;
+}

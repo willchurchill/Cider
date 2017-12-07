@@ -1,43 +1,51 @@
-<div class="bg">
-</div>
-<app-navstub></app-navstub>
-<section class="sample" id="nietzsche">
-<section class="text">
-  <h2><span>#RunHardPlayHard</span></h2>
-</section>
-</section>
-<div class="container">
-  <div class="kirsten">
-    <div class="double">
-      <div class="wide2 textt">
-          <div class="white">
-            <h2 [class.active]="mainText1">Fancy a challenge?<br></h2>
-            <h2 [class.active]="mainText2">Run a half marathon in Somerset<br></h2>
-            <h2 [class.active]="mainText3">Fuelled by Cider<br></h2>
-          </div>
+<div class="container-fluid header-background">
+
+  <div class="nav-padding"></div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="white">
+          <h2 [class.active]="mainText1"><span class="white-bar-text">Fancy a challenge?</span></h2>
+          <h2 [class.active]="mainText2"><span class="white-bar-text">Run a half marathon in Somerset</span></h2>
+          <h2 [class.active]="mainText3"><span class="white-bar-text">Fuelled by Cider</span></h2>
+        </div>
       </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="container-fluid body-background">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+        <p class="body-text text-center">
+            The Ciderthon is a half marathon with a cider taster at every mile, where you will be earning every step of your way. In completing the Ciderthon, you will become a part of the heart of Somerset, experiencing the very best cider from the very best producers. You will be introduced to a community of people who work hard, play hard, and run damn hard too. And as a team you will do whatever it takes to get yourself, and others, to the finish line. 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <p class="body-header text-center">Become a CIDERTHONER</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="container-fluid carousel-container">
+  <div class="row no-gutters">
+    <div class="col-12 col-md-6">
+        <app-carousel [images]="images1" [text]="'Be a part of one of the first events of its kind'"></app-carousel>            
+    </div>
+    <div class="col-12 col-md-6">
+        <app-carousel [images]="images2" [text]="'Join the challenge'"></app-carousel>
     </div>
   </div>
 </div>
 
-<div class="container2">
-  A half marathon with a cider taster at every mile, you will be earning every step of your way <br><br>
-Finishing the Half Ciderthon will take you to a whole new level of epicness. You will become a part of the heart of Somerset, experiencing the very best cider from the very best producers. You will be introduced to a community of people who work hard, play hard, and run damn hard too.<br><br>
-And as a team you will do whatever it takes to get yourself, and others, to the finish line.
-</div>
-
-<div class="container2 light">
-<section class="sample" id="nietzsche">
-<section class="text">
-  <h2></h2>
-  <h1><span>Become a</span> Ciderthoner </h1>
-  <h2 class="center"><span>#RunHardPlayHard</span></h2>
-</section>
-</section>
-</div>
-
-<div class="container">
-<app-carousel [images]="images1" [text]="'Be a part of one of the first events of its kind'"></app-carousel>
-<app-carousel [images]="images2" [text]="'Join the challenge'"></app-carousel>
-</div>
 <app-footer></app-footer>

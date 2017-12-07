@@ -1,69 +1,24 @@
-.container {
-  display: flex;
-}
-
 .dark{
-  background: url("../../assets/Photos/Generic/kristian2.jpg") rgba(0,0,0,0.95)  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url("../../assets/Photos/Generic/kristian2.jpg") rgba(0,0,0,0.8)  no-repeat center center fixed;
   background-size: cover;
   background-blend-mode: color;
-  font-size: 1.2rem;
-  padding: 2% 5% 2% 5%;
-  // padding-bottom: px;
   text-align: center;
+  color:white;
+  padding: 2em 1em;
+}
+
+.footer-social {
+  padding:1em;
+  color:white;
+}
+
+.footer-social:hover {
+  text-decoration: none;
 }
 
 .logo {
   width: 10wh;
   height: 10vh;
   background: url("../../assets/Logo/endureit.png") no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-}
-
-.wide {
-  text-align: center;
-  flex: 1;
-}
-
-.logosBox {
-  display: flex;
-}
-
-.wideLogo {
-  flex: 1;
-  height: 10vh;
-  margin: 2vh 0;
-}
-
-.facebook {
-  height: 10vh;
-  background: url("../../assets/Photos/facebook.png") no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-}
-
-.insta {
-  height: 10vh;
-  background: url("../../assets/Photos/instagram.png") no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-}
-
-
-.mail {
-  height: 10vh;
-  background: url("../../assets/Photos/envelope.png") no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }

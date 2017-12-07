@@ -1,34 +1,362 @@
-<app-navstub></app-navstub>
-<div class="container">
-  <div class="wide">
-    <h1> Tickets </h1>
-    <p>
-    Early bird: £45
-    <br>
-    <br>
-    Standard: £50
-    <br>
-    <br>
-    Last Minute: £60
-    <br>
-    <br>
-    <!-- Links to waivers through ticket purchase -->
-  </p>
-  </div>
-  <div class="wide">
-    <h1> Ciderthon Rules </h1>
+<div class="container-fluid body-background">
 
-    <ul>
-    <li>
-    Good fancy dress is COMPULSORY. <br>
-    <li>
-    Train for a half marathon! It is still 13.1 miles which aren't going to complete themselves! <br>
-    <li>
-    We will let you know what ciders and other tasters will be available on route, make yourself aware of these and only have what's best for you. <br>
-    <li>
-    Take it at your own pace, have breaks when you need them. <br>
-    <!-- <li> -->
-    </ul>
+  <div class="nav-padding"></div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="ticket-panel">
+          
+          <p class="panel-header">Tickets</p>
+
+          <!--
+            To activate / deactivate a ticket type, uncomment / comment out the respective opening DIV tags.
+          -->
+          
+          <div class="ticket-option ticket-enabled" data-toggle="modal" data-target="#earlybirdtickets">
+          <!--<div class="ticket-option ticket-disabled">-->
+              <div class="row">
+              <div class="col-8">
+                <span class="ticket-main">Early Bird Ticket</span>
+              </div>
+              <div class="col ticket-price">
+                <span class="ticket-main">£45</span>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                  <span class="ticket-secondary">Non fancy dress option</span>
+                </div>
+                <div class="col ticket-price">
+                  <span class="ticket-secondary">£90</span>
+                </div>
+              </div>
+          </div>
+      
+          <!--<div class="ticket-option ticket-enabled" data-toggle="modal" data-target="#standardreleasetickets">-->
+          <div class="ticket-option ticket-disabled">
+              <div class="row">
+              <div class="col-8">
+                <span class="ticket-main">Standard Release Ticket</span>
+              </div>
+              <div class="col ticket-price">
+                <span class="ticket-main">£50</span>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                  <span class="ticket-secondary">Non fancy dress option</span>
+                </div>
+                <div class="col ticket-price">
+                  <span class="ticket-secondary">£100</span>
+                </div>
+              </div>
+          </div>
+
+          <!--<div class="ticket-option ticket-enabled" data-toggle="modal" data-target="#finalreleasetickets">-->
+          <div class="ticket-option ticket-disabled">
+              <div class="row">
+              <div class="col-8">
+                <span class="ticket-main">Final Release Ticket</span>
+              </div>
+              <div class="col ticket-price">
+                <span class="ticket-main">£55</span>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                  <span class="ticket-secondary">Non fancy dress option</span>
+                </div>
+                <div class="col ticket-price">
+                  <span class="ticket-secondary">£110</span>
+                </div>
+              </div>
+          </div>
+             
+        </div>
+      </div>
+      <div class="col-md-6">
+          <div class="ticket-panel">
+
+            <div class="panel-header">Ciderthon Rules</div>
+
+            <div class="panel-text">
+              <ul>
+                <li>Dress up, and make it great.</li>
+                <li>Train for a half marathon! It is still 13.1 miles, which aren't going to complete themselves.</li>
+                <li>Make sure you only eat and drink what is best for you during the run.</li>
+                <li>Take it at your own pace, have breaks when you need them.</li>
+                <li>Chat cider with people!</li>
+              </ul>
+              <p>By taking part in Ciderthon, you also agree to our <span class="waiver-link" data-toggle="modal" data-target="#waivermodal">participant waiver</span>.</p>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="modal fade" id="earlybirdtickets" tabindex="-1" role="dialog" aria-labelledby="earlybirdticketslabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="earlybirdticketslabel">Early Bird Tickets</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="iframe-container">
+            <iframe src="http://copyandcode.co.uk/sandbox/ciderthon/earlybirdtickets.html" class="ticket-iframe"></iframe>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
 </div>
+
+<div class="modal fade" id="standardreleasetickets" tabindex="-1" role="dialog" aria-labelledby="standardreleaseticketslabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="standardreleaseticketslabel">Standard Release Tickets</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="iframe-container">
+            <iframe src="http://copyandcode.co.uk/sandbox/ciderthon/standardreleasetickets.html" class="ticket-iframe"></iframe>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="finalreleasetickets" tabindex="-1" role="dialog" aria-labelledby="finalreleaseticketslabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="finalreleaseticketslabel">Final Release Tickets</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="iframe-container">
+            <iframe src="http://copyandcode.co.uk/sandbox/ciderthon/finalreleasetickets.html" class="ticket-iframe"></iframe>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="waivermodal" tabindex="-1" role="dialog" aria-labelledby="waivermodallabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="waivermodallabel">Participant Waiver: The Ciderthon, brought to you by Endure It Limited</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          ASSUMPTION OF RISK, WAIVER OF LIABILITY, AND INDEMNITY AGREEMENT
+          <br>
+          PARTICIPANTS: READ THIS DOCUMENT CAREFULLY BEFORE ACCEPTING. THIS DOCUMENT HAS LEGAL CONSEQUENCES AND WILL AFFECT YOUR LEGAL RIGHTS AND WILL ELIMINATE YOUR ABILITY TO BRING FUTURE LEGAL ACTIONS.
+        </p>
+        <p>
+          <strong>Parties</strong>
+          <br>
+          Released Parties include Endure It Limited and its directors, officers, employees, agents, contractors, insurers, spectators, equipment suppliers, and volunteers; 
+          VENUE and its directors, officers, employees, agents, contractors, insurers, equipment suppliers, and volunteers; all Endure It Limited event sponsors, organizers, promoters, directors, officials, property owners, and advertisers; governmental bodies and/or municipal agencies whose property and/or personnel are used; and any or all parent, subsidiary or affiliate companies, licensees, officers, directors, partners, board members, supervisors, insurers, agents, equipment suppliers, and representatives of any of the foregoing.   
+          Releasing Parties include: the participant as well as participant’s spouse, children, parents, guardians, heirs, next of kin, and any legal or personal representatives, executors, administrators, successors and assigns, or anyone else who might claim or sue on participant’s behalf.  
+        </p>
+        <p>
+          <strong>Assumption of Inherent Risks:</strong>
+          The Ciderthon event is meant to be an extreme test of toughness, strength, stamina, camaraderie, and mental grit that takes place in one place in one day. It is not a race against other contestants, but rather a competition with oneself and the course. The object is to complete the run while drinking cider where the participant desires to. Drinking cider is part of the challenge and means that the Ciderthon is a hazardous activity that presents the ultimate physical and mental challenge to participants.             
+        </p>
+        <p>
+          I acknowledge that The Ciderthon event is an extreme test of my physical and mental limits that carries with it inherent risks of physical injury. Inherent risks are risks that cannot be eliminated completely (without changing the challenging nature of The Ciderthon event) regardless of the care and precautions taken by Endure It Limited (hereafter used when referring to the corporate entity and protected parties). 
+        </p>
+        <p>
+          I also understand that it is can become strenuous particularly towards the end of the half marathon, with the accompanying change of bodily state which takes place under the influence of alcohol. I understand that these hazards may be magnified due to the fact that The Ciderthon event may be conducted under what may be extreme conditions and circumstances. I understand and acknowledge that the inherent risks include, but are not limited to:
+        </p>
+        <ol>
+          <li>contact or collision with persons or objects (e.g., collision with spectators or course personnel), contact with other participants, contact or collision with motor vehicles or machinery, and contact with natural or man-made fixed objects or course set up equipment;</li>
+          <li>equipment related hazards (e.g., broken, defective or inadequate competition equipment, unexpected equipment failure, imperfect course conditions);</li>
+          <li>weather-related hazards (e.g., extreme heat, extreme cold, humidity, ice, rain, fog);</li>
+          <li>inadequate or negligent first aid and/or emergency measures;</li>
+          <li>judgment- and/or behavior-related problems (e.g., erratic or inappropriate co-participant behavior, erratic or inappropriate behavior by the participant, errors in judgment by personnel working the event; and</li>
+          <li>natural hazards (e.g. uneven terrain, rock falls, lightning strikes, earthquakes, wildlife attacks, contact with poisonous plants, marine life and/or ticks).</li>
+        </ol>
+        <p>
+          I further understand and acknowledge that any of these risks and others, not specifically named, may cause injury or injuries that may be categorized as minor, serious, or catastrophic. Minor injuries are common and include, but are not limited to:  scrapes, bruises, sprains, nausea, and cuts. Serious injuries are less common, but do sometimes occur.  They include, but are not limited to: property loss or damage, broken bones, torn ligaments, concussions, exposure, heat-related illness, mental stress or exhaustion, infection, and concussions. 
+        </p>
+        <p>
+          Catastrophic injuries are rare; however, we feel that our participants should be aware of the possibility. These injuries can include permanent disabilities, spinal injuries and paralysis, stroke, heart attack, and even death.
+        </p>
+        <p>
+          I also understand that it is my responsibility to consult with my personal physician prior to participating in The Ciderthon event to ensure that such participation will not pose any unusual risks to my health and well-being.
+        </p>
+        <p>
+          I understand that it is my responsibility to inspect the Course, facilities, equipment, and areas to be used, and if I believe or become aware that any are unsafe or pose unreasonable risks, I agree to immediately notify appropriate personnel. By participating in the event, I am acknowledging that I have found the course, facilities, equipment, and areas to be used to be safe and acceptable for participation. I accept full and sole responsibility for the condition and adequacy of my equipment.
+        </p>
+        <p>
+          I understand fully the inherent risks participating in The Ciderthon event and assert that I am willingly and voluntarily participating in the event. I have read the preceding paragraphs and acknowledge that
+        </p>
+        <ol>
+          <li>I know the nature of The Ciderthon event;</li>
+          <li>I understand the demands of this activity relative to my physical condition; and </li>
+          <li>I appreciate the potential impact of the types of injuries that may result from The Ciderthon event.</li>
+        </ol>
+        <p>
+          I hereby assert that I knowingly assume all of the inherent risks of the activity and take full responsibility for any and all damages, liabilities, losses, or expenses that I may incur as a result of participating in The Ciderthon event.
+        </p>
+
+        <p>
+          <strong>Waiver of Liability for ORDINARY NEGLIGENCE:</strong>
+          In consideration of being permitted to participate in The Ciderthon event, and for other good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, I (on behalf of the 
+          Releasing Parties) hereby forever waive, release, covenant not to sue, and discharge Endure It Limited and the other Released Parties from any and all claims resulting from the INHERENT RISKS of The Ciderthon event or the ORDINARY NEGLIGENCE of Endure It Limited (or other Released Parties) that I may have arising out of my participation in The Ciderthon event.   
+        </p>
+        <p>
+          This agreement applies to
+        </p>
+        <ol>
+          <li>personal injury (including death) from incidents or illnesses arising from The Ciderthon event participation, which includes injury during course inspection, observation, practice runs, the event, medical treatment and while on the premises (including, but not limited to stands, sidewalks, parking areas, restrooms, first-aid tents, and bag drop off points); and</li>
+          <li>any and all claims resulting from damage to, loss of, or theft of property.</li>
+        </ol>
+        <p>
+          <strong>Indemnification Agreement:</strong>
+          In consideration of being permitted to participate in The Ciderthon event and for other good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, I hereby agree to hold harmless, defend and indemnify Endure It Limited (and the other Released Parties) from and against:
+        </p>
+        <ol>
+          <li>Any and all claims made by me (or any Releasing Party) arising from injury or loss due to my participation in The Ciderthon event; and</li>
+          <li>Against any and all claims of co-participants, rescuers, and others arising from my conduct in the course of my participation in The Ciderthon event.</li>
+        </ol>
+        <p>
+          For the purposes hereof, “claims” includes all actions and causes of action, claims, demands, losses, costs, expenses and damages, including legal fees and related expenses. This indemnity shall survive the expiration or sooner termination of The Ciderthon event.
+        </p>
+        <p>
+          <strong>Other Agreements</strong>
+        </p>
+        <p>
+          <strong>Venue and Jurisdiction:</strong>
+          I understand that if legal action is brought, the appropriate state or federal trial court for the state in which The Ciderthon Event is held has the sole and exclusive jurisdiction and that only the substantive laws of the State in which The Ciderthon Event is held shall apply.
+        </p>
+        <p>
+          <strong>Severability:</strong>
+          I understand and agree that this Assumption of Risk, Waiver of Liability, and Indemnification Agreement is intended to be as broad and inclusive as is permitted by the state in which The Ciderthon Event is held and that if any provision shall be found to be unlawful, void, or for any reason unenforceable, then that provision shall be severed from this Agreement and does not affect the validity and enforceability of any remaining provisions.  
+        </p>
+        <p>
+          <strong>Integration:</strong>
+          I affirm that this agreement supersedes any and all previous oral or written promises or agreements.  I understand that this is the entire Agreement between me and Endure It Limited and cannot be modified or changed in any way by representations or statements by any agent or employee of Endure It Limited.  It may only be amended by a written document duly executed by all parties.
+        </p>
+        <p>
+          <strong>Mediation and Arbitration:</strong>
+          In the event of a legal issue, I agree to engage in good faith efforts to mediate any dispute that might arise. Any agreement reached will be formalized by a written contractual agreement at that time. Should the issue not be resolved by mediation, I agree that all disputes, controversies, or claims arising out of my participation in The Ciderthon event shall be submitted to binding arbitration in accordance with the applicable rules of the American Arbitration Association then in effect.  The cost of such action shall be shared equally by the parties.
+        </p>
+        <p>
+          I further acknowledge and agree that any question, issue, or dispute as to the arbitrability of any dispute, controversy, or claim arising out of my participation in The Ciderthon event, will be submitted to an arbitrator in accordance with the applicable rules of the American Arbitration Association then in effect. The Arbitration Rules of the American Arbitration Association are available on-line at www.adr.org. 
+        </p>
+        <p>
+          <strong>Agreements for the Protection of Participants</strong>
+        </p>
+        <ul>
+          <li>I represent and warrant that I am in good health and in proper physical condition to safely participate in The Ciderthon event. I certify that I have no known or knowable physical or mental conditions that would affect my ability to safely participate in The Ciderthon event, or that would result in my participation creating a risk of danger to myself or to others.</li>
+          <li>I represent and warrant that by consuming alcohol as part of The Ciderthon, I will be under the influence of alcohol and if I am not in full command of my facilities I am doing so at my own risk.</li>
+          <li>I agree not to be under the influence of alcohol and/or drugs at the commencement of my participating in The Ciderthon.</li>
+          <li>I acknowledge that Endure It Limited recommends and encourages each client to get medical clearance from his/her personal physician prior to participation.</li>
+          <li>I assert that I have not been advised or cautioned against participating by a medical practitioner.</li>
+          <li>I understand that it is my responsibility to continuously monitor my own physical and mental condition during the Course, and I agree to withdraw immediately and notify appropriate personnel if at any point my continued participation would create a risk of danger to myself or to others.</li>
+          <li>I represent and warrant that I am covered by medical insurance.</li>
+          <li>In the event of an injury to me that renders me unconscious or incapable of making a medical decision, I authorize appropriate Endure It Limited personnel and emergency medical personnel at the event to make emergency medical decisions on my behalf (including, but not limited to CPR and AED).</li>
+          <li>I authorize Endure It Limited to secure emergency medical care or transportation (i.e., EMS) when deemed necessary by Endure It Limited</li>
+          <li>I agree to assume all costs of emergency medical care and transportation.</li>
+          <li>I acknowledge that Endure It Limited has instituted its rules for the protection of the participant and co-participants. I agree to familiarize myself with those rules and follow them throughout the event. I also recognize the authority of Endure It Limited to halt my participation (and, if necessary, have me removed from the premises) if my participation, conduct, or presence endangers myself or my co-participants.</li>
+        </ul>
+        <p>
+          <strong>Acknowledgment of Understanding:</strong>
+          I have read this Assumption of Risk, Waiver of Liability, and Indemnification Agreement and fully understand its terms.  I understand that I am giving up substantial rights, including my right to sue.  I further acknowledge that I am freely and voluntarily agreeing to the agreement and participating in The Ciderthon event, and intend my acceptance to be a complete and unconditional release of all liability due to ORDINARY NEGLIGENCE of Endure It Limited (and other Released Parties) or the INHERENT RISKS of the activity, to the greatest extent allowed by law in the State in which The Ciderthon Event is held.
+        </p>
+        <p>
+          <strong>DECLARATION</strong>
+        </p>
+        <ol>
+          <li>I understand that participating in The Ciderthon event is a physically challenging and potentially dangerous activity and involves the risk of serious injury and/or death.</li>
+          <li>I assert that I am in good health and in proper physical condition to safely participate in The Ciderthon event.  I certify that I have no known or knowable physical or mental conditions that would affect my ability to safely participate in The Ciderthon event, or that would result in my participation creating a risk of danger to myself or to others.</li>
+        </ol>
+        <p>
+          <strong>COURSE RULES</strong>
+          Entry and Participation Agreements
+        </p>
+        <p>
+          <strong>Rules:</strong>
+          I agree to become familiar with and abide by all written and/or posted rules of The Ciderthon, as well as all written and/or posted rules of the Venue.  I further agree to comply with all directions, instructions and decisions of Endure It Limited and Venue personnel. I further agree not to challenge these rules, directions, instructions, or decisions on any basis at any time.
+        </p>
+        <p>
+          <strong>Emergency Delay or Cancellation:</strong>
+          I acknowledge that Endure It Limited at its sole discretion may delay, modify, or cancel The Ciderthon event if conditions or natural or man-made emergencies make administering the event unreasonably difficult or unsafe.  I agree that “emergency” is defined to mean any event beyond the control of Endure It Limited, including but not limited to:  high wind, extreme rain or hail, hurricane, tornado, earthquake, flood, acts of terrorism, fire, threatened or actual strike, labor difficulty or work stoppage, insurrection, war, public disaster, and unavoidable casualty. In the event of a delay, modification, or cancellation of The Ciderthon event as described in this paragraph, I understand that I will not be entitled to a refund of my entry fee or any other costs incurred in connection with The Ciderthon event.
+        </p>
+        <p>
+          <strong>Govern Participation:</strong>
+          I understand that Endure It Limited has the authority to issue instructions or directions relating to the manner of my safe participation in the Course or Related Activities and the authority to halt my participation in the 
+          Course or Related Activities at any time they deem it necessary to protect the safety of participants, spectators, and personnel; and/or promote fairness and the spirit of
+          Endure It Limited.           
+        </p>
+        <p>
+          <strong>Removal from Course:</strong>
+          I understand that Endure It Limited and Venue personnel may immediately cause anyone who disobeys any rules, directions, instructions, decisions, or laws, or whose behaviour endangers safety or negatively affects a person, facility, or property of any type or kind, to be removed from the Course. 
+        </p>
+        <p>
+          <strong>Refund Policy:</strong>
+          I hereby understand and acknowledge that all fees and associated costs (including optional product purchases, spectator tickets, and donations), paid in registration for The Ciderthon event are NOT REFUNDABLE FOR ANY REASON, under any circumstances, including but not limited to injury, a scheduling conflict, and/or event cancellation.  I also understand that active duty or deployed military participants may be entitled to a refund on a case-by-case basis upon providing sufficient, official documentation regarding the deployment that conflicts with participating in the event.
+        </p>
+        <p>
+          <strong>Attitude and Behaviour:</strong>
+          I also agree to exhibit appropriate behaviour at all times; demonstrate respect for all people, equipment, and facilities; and participate with a cooperative and positive attitude.
+        </p>
+        <p>
+          <strong>Alcohol & Drugs</strong>
+          I certify that I am not, and on the date of The Ciderthon event will not be, under the influence of any drugs that would in any way impair my ability to safely participate in The Ciderthon event. I agree to take full responsibility for my decision to consume alcohol at the event and that any impairment in my ability to complete the half marathon is done at my own risk.
+        </p>
+        <p>
+          <strong>Specific Rules</strong>
+          I specifically acknowledge and agree to abide by the following rules:
+        </p>
+        <ol>
+          <li>no urination or defecation is permitted outside of designated areas;</li>
+          <li>no wheeled conveyances or pets are allowed in the Course at any time;</li>
+          <li>no clothing, props or equipment that pose an unnecessary risk to participants, spectators or personnel are permitted; and</li>
+          <li>obey civil and criminal laws including traffic laws.</li>
+        </ol>
+        <p>
+          <strong>Photography:</strong>
+          I understand that any and all photographs, motion pictures, recordings, and/or likenesses of me captured during The Ciderthon event by Endure It Limited, its affiliated entities or contractors, and/or the media become the sole property of Endure It Limited.  I grant the right, permission and authority to Endure It Limited and its designees to use my name and any such photographs, motion pictures, recordings, and/or likenesses for any legitimate purpose, including but not limited to promoting, advertising, and marketing activities.  I further understand that Endure It Limited and its designees have the full right to sell and/or profit from the commercial use of such photographs, motion pictures, recordings, and/or likenesses.
+        </p>
+        <p>
+          <strong>Legal Drinking Age:</strong>
+          I affirm that I have reached the legal drinking age (or will have reached that age by the date of The Ciderthon event. The Legal Drinking age is 18 across the UK.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <app-footer></app-footer>
